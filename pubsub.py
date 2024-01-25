@@ -136,7 +136,7 @@ if __name__ == '__main__':
             # print("Publishing message to topic '{}': {}".format(message_topic, message))
             # message_json = json.dumps(message)
             message_json = json.dumps(
-                "2023:07:03:05:12;ken;225;ox;92"
+                {"data":"2023:07:03:05:12;ken;225;ox;92"}
             )
             mqtt_connection.publish(
                 topic=message_topic,
